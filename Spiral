@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+@author: lemonhope24
+"""
+
+import turtle // import turtle library
+
+t = turtle.Turtle()
+s = turtle.Screen()
+
+s.bgcolor("black")
+t.width(2)
+t.speed(15)
+
+col = ('pink','violet','magenta')
+for i in range (300):
+    t.pencolor(col[i%3])
+    t.forward(i*6)
+    t.right(122)
